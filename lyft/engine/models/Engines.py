@@ -7,7 +7,7 @@ class CapuletEngine(Engine):
     def needs_service(self):
         return self.current_mileage-self.last_service_mileage>30000
 
-class StrenmanEngine(Engine):
+class SternmanEngine(Engine):
     def __init__(self, warning_light_is_on:bool):
         self.warning_light_is_on=warning_light_is_on
     def needs_service(self):
